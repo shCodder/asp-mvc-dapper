@@ -6,3 +6,14 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<h3>Users:</h3>
+<ul>
+@foreach(var item in Model)
+{
+    <li>
+        <p>@item.Id - @item.Name with ballance @item.Ballance was created @item.Created</p>
+    </li>
+}
+</ul>
+
